@@ -132,30 +132,27 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 #projects .project #tea-cozy, 
 #projects .project #polyvalent-faatimah,
 #projects .project #smart-shelters,
 #projects .project #excursion {
-    background: rgb(194, 183, 183);
-    width: 45%;
-    height: 500px;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
+    width: 20%;
+    padding: 20px;
+    margin: 0px 50px;
+    
 }
 
 #projects .project #tea-cozy img,
 #projects .project #polyvalent-faatimah img,
 #projects .project #smart-shelters img,
 #projects .project #excursion img {
-    width: 100%;
-    height: 400px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 50px;
 }
 
 #projects .project #tea-cozy h3,
@@ -190,13 +187,16 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px 350px;
+    padding: 50px 250px;
+}
+
+#skills #skills-image div {
+    margin: 50px;
 }
 
 #skills #skills-image img {
-    margin: 30px;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 #contact {
