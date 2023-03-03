@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    background-color: rgb(194, 183, 183);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(63, 58, 58, 0.8);
+    position: fixed;
+}
+
+#logo a, #footer-logo a {
+    text-decoration: none;
+    color: rgb(231, 95, 32);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+nav {
+    width: 75%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    color: rgb(231, 95, 32);
+    text-decoration: underline;
+}
+
+#active {
+    color: rgb(231, 95, 32);
+    text-decoration: underline;
+}
+
+#hero {
+    text-align: center;
+    padding: 200px 50px 30px 50px;
+    background: linear-gradient(rgb(63, 58, 58), grey);
+    color: #ffffff;
+}
+
+#hero-h1 {
+    font-size: 4em;
+    padding-top: 50px;
+}
+
+#me {
+    color: rgb(231, 95, 32);
+    font-size: 1.1em;
+}
+
+#hero-paragraph {
+    font-size: 1em;
+    padding: 50px 0px;
+    line-height: 2em;
+}
+
+#hero-button {
+    color: #ffffff;
+    background: rgb(231, 95, 32);
+    padding: 10px 25px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+#hero-button:hover {
+    color: rgb(231, 95, 32);
+    background-color: #ffffff;
+}
+
+#about-me {
+    text-align: center;
+    padding: 50px 100px;
+    margin: 20px;
+}
+
+#about-me h2 {
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+#about-me p {
+    line-height: 3em;
+    font-size: 1.1em;
+}
+
+#projects {
+    background: rgb(240, 239, 239);
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#projects h1 {
+    letter-spacing: 10px;
+    padding-top: 100px;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+#projects .project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#projects .project #tea-cozy, 
+#projects .project #polyvalent-faatimah,
+#projects .project #smart-shelters,
+#projects .project #excursion {
+    background: rgb(194, 183, 183);
+    width: 45%;
+    height: 500px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+#projects .project #tea-cozy img,
+#projects .project #polyvalent-faatimah img,
+#projects .project #smart-shelters img,
+#projects .project #excursion img {
+    width: 100%;
+    height: 400px;
+}
+
+#projects .project #tea-cozy h3,
+#projects .project #polyvalent-faatimah h3,
+#projects .project #smart-shelters h3,
+#projects .project #excursion h3 {
+    margin: 10px;
+    text-align: center;
+}
+
+#projects .project #tea-cozy p,
+#projects .project #polyvalent-faatimah p,
+#projects .project #smart-shelters p,
+#projects .project #excursion p {
+    text-align: left;
+    line-height: 40px;
+}
+
+#skills {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#skills h1 {
+    letter-spacing: 10px;
+    margin: 20px 0px;
+    font-size: 3em;
+}
+
+#skills #skills-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 350px;
+}
+
+#skills #skills-image img {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#contact {
+    text-align: center;
+    background-color: rgb(240, 239, 239);;
+}
+
+#contact h1 {
+    padding: 40px;
+    font-size: 2rem;
+    letter-spacing: 0.8em;
+}
+
+#phone {
+    margin: 30px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#social-media a {
+    color: rgb(231, 95, 32);
+}
+
+.fa-brands, .fa-regular {
+    margin: 20px;
+}
+
+footer {
+    font-size: 1.1em;
+    width: 100%;
+    background: rgb(63, 58, 58);
+    color: rgb(231, 95, 32);
+    text-align: center;
+    padding: 10px 100px;
+}
