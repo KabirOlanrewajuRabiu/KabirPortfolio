@@ -33,7 +33,7 @@ header {
 }
 
 nav {
-    width: 75%;
+    width: 40%;
 }
 
 nav ul {
@@ -56,6 +56,17 @@ nav ul li a:hover {
 #active {
     color: rgb(231, 95, 32);
     text-decoration: underline;
+}
+
+nav ul li #menu-contact {
+    background-color: rgb(231, 95, 32);
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+nav ul li #menu-contact:hover {
+    color: rgb(231, 95, 32);
+    background-color: #ffffff;
 }
 
 #hero {
@@ -191,8 +202,8 @@ nav ul li a:hover {
 }
 
 #skills #skills-image img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
 }
 
 #contact {
