@@ -71,7 +71,7 @@ nav ul li #menu-contact:hover {
 
 #hero {
     text-align: center;
-    padding: 200px 50px 30px 50px;
+    padding: 200px 50px 100px 50px;
     background: linear-gradient(to right, rgb(63, 58, 58), rgb(107, 107, 107), rgb(63, 58, 58));
     color: #ffffff;
 }
@@ -95,10 +95,10 @@ nav ul li #menu-contact:hover {
 #hero-button {
     color: #ffffff;
     background: rgb(231, 95, 32);
-    padding: 10px 25px;
+    padding: 10px 50px;
     margin: 10px 0px;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     font-weight: 800;
 }
 
@@ -109,16 +109,25 @@ nav ul li #menu-contact:hover {
 
 #about-me {
     text-align: center;
-    padding: 50px 100px;
-    margin: 20px;
+    margin: 100px 50px;
 }
 
 #about-me h2 {
-    margin-bottom: 30px;
-    font-size: 3em;
+    margin-bottom: 50px;
+    font-size: 2em;
+    letter-spacing: 10px;
 }
 
-#about-me p {
+#about-me #about-me-paragraph {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: center;
+}
+
+#about-me #about-me-paragraph p {
+    width: 45%;
+    text-align: justify;
     line-height: 3em;
     font-size: 1.1em;
 }
