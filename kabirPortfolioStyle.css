@@ -136,12 +136,13 @@ nav ul li #menu-contact:hover {
     background: rgb(240, 239, 239);
     width: 100%;
     text-align: center;
-    padding-top: 30px;
+    padding: 100px 0px;
 }
 
 #projects h1 {
     letter-spacing: 10px;
     font-size: 2em;
+    padding-bottom: 30px;
 }
 
 #projects .project {
@@ -156,8 +157,8 @@ nav ul li #menu-contact:hover {
 #projects .project #polyvalent-faatimah,
 #projects .project #smart-shelters,
 #projects .project #excursion {
-    width: 20%;
-    margin: 20px 5%;
+    width: 30%;
+    margin: 15px;
 }
 
 #projects .project #tea-cozy h3,
@@ -172,10 +173,9 @@ nav ul li #menu-contact:hover {
 #projects .project #polyvalent-faatimah img,
 #projects .project #smart-shelters img,
 #projects .project #excursion img {
-    width: 200px;
-    height: 200px;
+    width: 95%;
+    height: 300px;
     border: 1px black solid;
-    border-radius: 20px;
     margin-top: 30px;
     margin-bottom: 10px;
 }
@@ -189,7 +189,7 @@ nav ul li #menu-contact:hover {
 
 #skills {
     text-align: center;
-    margin: 30px 0px;
+    padding: 100px 0px;
 }
 
 #skills h1 {
@@ -217,7 +217,8 @@ nav ul li #menu-contact:hover {
 
 #contact {
     text-align: center;
-    background-color: rgb(240, 239, 239);;
+    background-color: rgb(240, 239, 239);
+    padding: 80px 0px;
 }
 
 #contact h1 {
