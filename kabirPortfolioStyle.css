@@ -155,10 +155,11 @@ nav ul li #menu-contact:hover {
 
 #projects .project #tea-cozy, 
 #projects .project #polyvalent-faatimah,
-#projects .project #smart-shelters,
-#projects .project #excursion {
+#projects .project #smart-shelters {
     width: 30%;
     margin: 15px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(35, 25, 21, 0.2), -8px -8px 8px rgba(23, 21, 21, 0.2);
 }
 
 #projects .project #tea-cozy h3,
@@ -175,7 +176,6 @@ nav ul li #menu-contact:hover {
 #projects .project #excursion img {
     width: 95%;
     height: 300px;
-    border: 1px black solid;
     margin-top: 30px;
     margin-bottom: 10px;
 }
