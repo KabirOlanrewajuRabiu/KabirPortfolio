@@ -176,7 +176,7 @@ nav ul li #menu-contact:hover {
 #projects .project #polyvalent-faatimah h3,
 #projects .project #smart-shelters h3,
 #projects .project #calculator h3 {
-    padding: 20px 10px;
+    padding: 40px 10px 0px 10px;
     text-align: left;
     font-size: 1.5rem;
 }
@@ -186,7 +186,7 @@ nav ul li #menu-contact:hover {
 #projects .project #smart-shelters p,
 #projects .project #calculator p {
     text-align: left;
-    padding: 30px 10px;
+    padding: 20px 10px 40px 10px;
     color: rgb(129, 144, 156);
 }
 
