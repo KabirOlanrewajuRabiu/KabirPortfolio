@@ -157,6 +157,11 @@ nav ul li #menu-contact:hover {
 #projects .project #polyvalent-faatimah,
 #projects .project #smart-shelters,
 #projects .project #calculator {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: normal;
     width: 30%;
     margin: 15px;
     border-radius: 10px;
@@ -170,15 +175,17 @@ nav ul li #menu-contact:hover {
     width: 100%;
     height: 300px;
     padding-bottom: 50px;
+    margin-top: 0;
 }
 
 #projects .project #tea-cozy h3,
 #projects .project #polyvalent-faatimah h3,
 #projects .project #smart-shelters h3,
 #projects .project #calculator h3 {
-    padding: 40px 10px 0px 10px;
+    padding: 10px;
     text-align: left;
     font-size: 1.5rem;
+    height: 100px;
 }
 
 #projects .project #tea-cozy p,
@@ -186,7 +193,7 @@ nav ul li #menu-contact:hover {
 #projects .project #smart-shelters p,
 #projects .project #calculator p {
     text-align: left;
-    padding: 20px 10px 40px 10px;
+    padding: 40px 10px;
     color: rgb(129, 144, 156);
 }
 
