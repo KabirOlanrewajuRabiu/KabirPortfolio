@@ -23,6 +23,7 @@ header {
     padding: 20px 50px;
     background: rgba(63, 58, 58, 0.8);
     position: fixed;
+    top: 0;
 }
 
 #logo a, #footer-logo a {
@@ -32,23 +33,21 @@ header {
     font-weight: 900;
 }
 
-nav {
-    width: 40%;
-}
-
-nav ul {
+.nav-menu  {
     display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
+    gap: 50px;
 }
 
-nav ul li a {
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
     text-decoration: none;
     color: #ffffff;
 }
 
-nav ul li a:hover {
+.nav-link:hover {
     color: rgb(231, 95, 32);
     text-decoration: underline;
 }
@@ -58,15 +57,16 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-nav ul li #menu-contact {
+#menu-contact {
     background-color: rgb(231, 95, 32);
     padding: 10px 25px;
     border-radius: 30px;
 }
 
-nav ul li #menu-contact:hover {
+#menu-contact:hover {
     color: rgb(231, 95, 32);
     background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
 
 #hero {
@@ -105,6 +105,7 @@ nav ul li #menu-contact:hover {
 #hero-button:hover {
     color: rgb(231, 95, 32);
     background-color: #ffffff;
+    transition: all 0.5s ease-in-out;
 }
 
 #about-me {
@@ -213,16 +214,13 @@ nav ul li #menu-contact:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px 250px;
-}
-
-#skills #skills-image div {
-    margin: 50px;
+    padding: 50px 150px;
 }
 
 #skills #skills-image img {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    margin: 50px;
 }
 
 #contact {
@@ -256,6 +254,10 @@ nav ul li #menu-contact:hover {
     color: rgb(231, 95, 32);
 }
 
+#social-media a:hover {
+    color: black;
+}
+
 .fa-brands, .fa-regular {
     margin: 20px;
 }
@@ -267,4 +269,208 @@ footer {
     color: rgb(231, 95, 32);
     text-align: center;
     padding: 10px 100px;
+}
+
+
+/* Mobile */
+
+@media  screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: white;
+    }
+    
+    .nav-menu {
+        background: rgba(63, 58, 58, 0.8);
+        position: fixed;
+        right: -100%;
+        top: 82px;
+        gap: 0;
+        flex-direction: column;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        justify-content: flex-start;
+        transition: 0.5s;
+    }
+
+    .nav-item {
+        margin: 30px auto;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    #hero-h1 {
+        font-size: 3em;
+        padding-top: 0;
+    }
+    
+    #about-me {
+        margin: 100px 30px;
+    }
+    
+    #about-me #about-me-paragraph {
+        flex-direction: column;
+    }
+    
+    #about-me #about-me-paragraph p {
+        width: 100%;
+        text-align: center;
+    }
+
+    #projects {
+        padding: 100px 0px;
+    }
+    
+    #projects .project {
+        flex-direction: column;
+    }
+    
+    #projects .project #tea-cozy, 
+    #projects .project #polyvalent-faatimah,
+    #projects .project #smart-shelters,
+    #projects .project #calculator {
+        width: 80%;
+        margin: 50px auto;
+    }
+    
+    #skills #skills-image {
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    #skills #skills-image img {
+        width: 50px;
+        height: 50px;
+        margin: 30px;
+    }
+}
+
+
+
+/* Tablet/iPad */
+
+@media  screen and (max-width: 900px) and (min-width: 601px) {
+
+        header {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+    
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+        
+        .nav-menu {
+            background: rgba(63, 58, 58, 0.8);
+            position: fixed;
+            right: -100%;
+            top: 82px;
+            gap: 0;
+            flex-direction: column;
+            width: 40%;
+            height: 100vh;
+            text-align: center;
+            justify-content: flex-start;
+            transition: 0.5s;
+        }
+    
+        .nav-item {
+            margin: 30px auto;
+        }
+    
+        .nav-menu.active {
+            left: 0;
+        }
+
+        #hero-h1 {
+            font-size: 3.5em;
+            padding-top: 0;
+        }
+        
+        #about-me {
+            margin: 100px 40px;
+        }
+        
+        #about-me #about-me-paragraph {
+            flex-direction: column;
+        }
+        
+        #about-me #about-me-paragraph p {
+            width: 100%;
+            text-align: center;
+        }
+    
+        #projects {
+            padding: 100px 0px;
+        }
+        
+        #projects .project #tea-cozy, 
+        #projects .project #polyvalent-faatimah,
+        #projects .project #smart-shelters,
+        #projects .project #calculator {
+            width: 45%;
+            margin: 50px auto;
+        }
+        
+        #skills #skills-image {
+            justify-content: center;
+            padding: 30px;
+        }
+        
+        #skills #skills-image img {
+            width: 50px;
+            height: 50px;
+            margin: 50px;
+        }
 }
