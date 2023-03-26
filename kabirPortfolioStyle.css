@@ -1,12 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 16px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -70,6 +70,7 @@ header {
 }
 
 #hero {
+    width: 100%;
     text-align: center;
     padding: 200px 50px 100px 50px;
     background: linear-gradient(to right, rgb(63, 58, 58), rgb(107, 107, 107), rgb(63, 58, 58));
@@ -113,7 +114,7 @@ header {
     margin: 100px 50px;
 }
 
-#about-me h2 {
+#about-me h1 {
     margin-bottom: 50px;
     font-size: 2em;
     letter-spacing: 10px;
@@ -158,12 +159,12 @@ header {
 #projects .project #polyvalent-faatimah,
 #projects .project #smart-shelters,
 #projects .project #calculator {
+    width: 30%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
     align-self: normal;
-    width: 30%;
     margin: 15px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(35, 25, 21, 0.2), -8px -8px 8px rgba(23, 21, 21, 0.2);
@@ -246,6 +247,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     padding: 30px;
 }
 
@@ -328,12 +330,18 @@ footer {
     }
 
     #hero-h1 {
-        font-size: 3em;
+        font-size: 2.5em;
         padding-top: 0;
     }
     
     #about-me {
         margin: 100px 30px;
+    }
+
+    #about-me h1, 
+    #projects h1,
+    #skills h1 {
+        font-size: 1.5em;
     }
     
     #about-me #about-me-paragraph {
@@ -358,7 +366,7 @@ footer {
     #projects .project #smart-shelters,
     #projects .project #calculator {
         width: 80%;
-        margin: 50px auto;
+        margin: 30px auto;
     }
     
     #skills #skills-image {
